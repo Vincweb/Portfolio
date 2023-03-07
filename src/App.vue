@@ -1,26 +1,31 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div>
+    <HomeSection />
+    <GameOfLifeSection />
+    <ContactSection />
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import HomeSection from '@/components/HomeSection.vue';
+import GameOfLifeSection from '@/components/GameOfLifeSection.vue'
+import ContactSection from '@/components/ContactSection.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
-  }
-}
+    HomeSection,
+    GameOfLifeSection,
+    ContactSection
+  },
+};
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto';
+  background-color: black;
 }
 </style>
